@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pggybnk | Save As You Pay</title>
+    <link rel="stylesheet" href="./output.css">
+    
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('images/gradients.jpg');
+          background-size: cover;
+        }
+        </style>
+    <br>
+    <br>
+    <br>
+    <!-- <div style="padding: 100 250 150"> -->
+    <div class="card w-96 bg-base-100 shadow-xl" style="margin: auto; padding-bottom: 140px;">
+        <div class="card-body">
+            <div class="avatar" style="margin: auto;">
+                <div class="w-24 rounded-full">
+                  <img src="./images/charlie.jpg" />
+                </div>
+              </div>
+          <h2 class="card-title" style="margin: auto;" id="greeting"></h2>
+          <div class="stat" style="margin: auto;">
+            <div class="stat-title" style="margin: auto;">Account balance</div>
+            <div class="stat-value" style="margin: auto; padding-bottom: 7px;">$12,345</div>
+            <div class="stat-actions" style="margin: auto;">
+              
+<label for="my-modal-3" class="btn btn-outline btn-accent">Add funds</label>
+
+
+<input type="checkbox" id="my-modal-3" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box relative" style="width: 200px;">
+    <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    <!-- <h3 class="text-lg font-bold">😐</h3> -->
+    <p class="py-4" style="text-align: center;">🏈</p>
+  </div>
+</div>
+              <!-- <button class="btn btn-sm btn-success" style="margin: auto;">Add funds</button> -->
+            </div>
+          </div>
+          <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" onclick="location.href='payment.html'">Make a payment</button>
+          <!-- <p>If a dog chews shoes whose shoes does he choose?</p> -->
+        </div>
+        <!-- <figure><img src="./images/piggy-piggy-bank.gif" alt="Shoes" /></figure> -->
+    <!-- </div> -->
+    <script>
+        const greeting = document.getElementById("greeting");
+const hour = new Date().getHours();
+const welcomeTypes = ["Good morning", "Good afternoon", "Good evening"];
+let welcomeText = "";
+
+if (hour < 12) welcomeText = welcomeTypes[0];
+else if (hour < 18) welcomeText = welcomeTypes[1];
+else welcomeText = welcomeTypes[2];
+
+greeting.innerHTML = welcomeText + ", Charles!";
+    </script>
+</body>
+</html>

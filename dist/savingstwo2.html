@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful — Pggybnk</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('./images/gradients.jpg');
+          background-size: cover;
+        }
+        </style>
+    <br>
+    <br>
+    <br>
+    <div class="card w-96 bg-base-100 shadow-xl" style="margin: auto; padding-bottom: 65px;">
+        <div class="card-body">
+          <h2 class="card-title">Transaction Complete</h2>
+          <p style="margin-bottom: 20px;" id="finalno"></p>
+          <div class="tooltip" data-tip="Reset the demo">
+            <button class="btn btn-outline" style="max-width: 80px; margin: auto;" onclick="location.href='index.html'">Done</button>
+          </div>
+        
+        </div>
+        <figure><img src="images/pigs.gif" alt="An animated cartoon piggybank with coins dropping into the slot" /></figure>
+      </div>
+      <script>
+        document.getElementById ("finalno").innerHTML = localStorage.getItem("finalsavings");
+    </script>
+</body>
+</html>
